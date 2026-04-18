@@ -1,9 +1,11 @@
 import ScrollRotateSection from './components/ScrollCube'
+import ScrollRotateSection2 from './components/ScrollCube2'
 
 function App() {
   return (
     <div className="min-h-dvh bg-zinc-950 text-zinc-100">
       <header className="border-b border-white/10">
+      <ScrollRotateSection2/>
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <a href="#top" className="flex items-center gap-2">
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white text-zinc-950 font-semibold">
