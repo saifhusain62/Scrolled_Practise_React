@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.perspective {
+  perspective: 1200px;
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+/* Faces */
+.front  { background: #3b82f6; transform: rotateY(0deg) translateZ(75px); }
+.back   { background: #ef4444; transform: rotateY(180deg) translateZ(75px); }
+.right  { background: #22c55e; transform: rotateY(90deg) translateZ(75px); }
+.left   { background: #f59e0b; transform: rotateY(-90deg) translateZ(75px); }
+.top    { background: #8b5cf6; transform: rotateX(90deg) translateZ(75px); }
+.bottom { background: #ec4899; transform: rotateX(-90deg) translateZ(75px); }
